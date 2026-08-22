@@ -47,10 +47,6 @@
     transition: 0.4s;
 }
 
-/* .nav-link:hover{
-    opacity: .6;
-} */
-
 .nav-link:hover:after {
     width: 100%;
 }
@@ -87,13 +83,9 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 4rem 9rem;
+    padding: 4rem 4rem;
     color: #ccc;
     font-family: "Inter", sans-serif;
-}
-
-.footer-right {
-    text-align: right;
 }
 
 .footer-email {
@@ -108,6 +100,10 @@ footer {
     font-size: 1.8rem;
 }
 
+.footer-right {
+    text-align: right;
+}
+
 .footer-title {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -117,10 +113,16 @@ footer {
 .footer-links {
     display: inline-flex;
     flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.25rem;
+    font-weight: 600;
+    gap: .25rem;
 }
 
 .link {
+    position: relative;
     display: inline-flex;
+    flex-direction: center;
     align-items: center;
     margin-bottom: 0.5rem;
     gap: 0.5rem;
@@ -128,14 +130,42 @@ footer {
     font-weight: 500;
 }
 
-.footer-icon {
-    width: 11px;
-    height: 11px;
-    background-color: #ccc;
-    transition: all 0.45s ease;
+/* Animation surlignage */
+.link:after {
+    content: "";
+    position: absolute;
+    background: #B4B4B4;
+    background: linear-gradient(90deg, rgba(180, 180, 180, 1) 60%, rgba(17, 17, 17, 1) 100%);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.4s;
+}
 
-    -webkit-mask: url("../images/svg/arrow.svg") no-repeat center;
-    -webkit-mask-size: contain;
-    mask: url("../images/svg/arrow.svg") no-repeat center;
-    mask-size: contain;
+.link:hover:after {
+    width: 57%;
+}
+
+/* Animation icon */
+.footer-icon{
+    vertical-align: middle;
+    overflow: visible;
+}
+
+.footer-icon .arrow-stick,
+.footer-icon .arrow-tip {
+    transition: transform 0.3s ease-in-out;
+}
+
+.link .arrow-stick {
+    transform-origin: 10px 13px;
+}
+
+.link:hover .arrow-stick {
+    transform: scale(1.3);
+}
+
+.link:hover .arrow-tip {
+    transform: translate(3px, -3px);
 }

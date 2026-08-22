@@ -20,21 +20,33 @@
 
 <body>
     <header id="nav">
-
-
-        <!-- <nav class="nav-links"> -->
         <a href="#home" class="nav-link">HOME</a>
         <a href="#about" class="nav-link">À PROPOS</a>
         <a href="#home" class="nav-logo"><img src="images/svg/logo_2.svg" alt="Logo Gaspar"></a>
         <a href="#projets" class="nav-link">PROJETS</a>
         <a href="#contact" class="nav-link">CONTACT</a>
-        <!-- </nav> -->
 
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-            <span></span>
-            <span></span>
-        </button>
+        <!-- <div id="mySidenav" class="sidenav">
+            <a href="#" id="closeBtn" class="close">x</a>
+
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#about" class="nav-link">À PROPOS</a>
+            <a href="#home" class="nav-logo"><img src="images/svg/logo_2.svg" alt="Logo Gaspar"></a>
+            <a href="#projets" class="nav-link">PROJETS</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a> -->
     </header>
+
+    <!-- <nav class="nav-links"> -->
+    <!-- </nav> -->
 
     <section class="hero" id="home">
         <div class="hero-filter"></div>
@@ -81,12 +93,12 @@
 
                 <!-- TO DO :
                 - Rajouter les fleurs en déco
-                - Réduire le texte
+                - Réduire le texte ✅
                 - Ajouter une photo
-                - Rendre responsive le footer et header
+                - Rendre responsive le footer ✅ et header
                 - Améliorer la version mobile
                     -> réduire la marge,
-                    -> gerer toute les dimmenssons : taille bouton, titre, texte, img,
+                    -> gerer toute les dimmenssons : taille bouton, titre, texte, img, ✅
                     -> enlever le sticky, ✅
                     -> pê séquencer les paragraphes
                 - Animation du texte & transition des pages
@@ -138,7 +150,8 @@
                 <div class="card-projets">
                     <a href="scripts/takumanga.html">
                         <div class="card-img bg-takumanga">
-                            <img src="images/takumanga/page_home_takumanga.png" alt="Image de présentation de Takumanga">
+                            <img src="images/takumanga/page_home_takumanga.png"
+                                alt="Image de présentation de Takumanga">
                         </div>
 
                         <div class="card-info">
@@ -156,7 +169,8 @@
                 <div class="card-projets">
                     <a href="scripts/arcaday.html">
                         <div class="card-img bg-arcaday">
-                            <img src="images/puissance_4/affiche_puissance4_2.png" alt="Image de présentation du puissance 4">
+                            <img src="images/puissance_4/affiche_puissance4_2.png"
+                                alt="Image de présentation du puissance 4">
                         </div>
 
                         <div class="card-info">
@@ -199,7 +213,8 @@
                 <div class="card-projets">
                     <a href="scripts/a_table_les_histoires.html">
                         <div class="card-img bg-atlh">
-                            <img src="images/atlh/page_home_a_table_les_histoires.png" alt="Image de présentation de A Table Les Histoires">
+                            <img src="images/atlh/page_home_a_table_les_histoires.png"
+                                alt="Image de présentation de A Table Les Histoires">
                         </div>
 
                         <div class="card-info">
@@ -268,9 +283,66 @@
             <div class="footer-right">
                 <p class="footer-title">CONTACTS</p>
                 <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/gaspar-deutsch-4033a7408/" class="link" target="blank">Linkdin<span class="footer-icon"></span></a>
-                    <a href="https://www.instagram.com/gaspar_dtch/" class="link" target="blank">Instagram<span class="footer-icon"></span></a>
-                    <a href="https://github.com/Gaspar-dtch" class="link" target="blank">Github<span class="footer-icon"></span></a>
+                    <a href="https://www.linkedin.com/in/gaspar-deutsch-4033a7408/" class="link" target="blank">
+                        Linkdin
+                        <!-- Icon SVG -->
+                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+
+                            <!-- boîte -->
+                            <path
+                                d="M18 11.5333V17.1333C18 17.6284 17.8033 18.1032 17.4533 18.4533C17.1032 18.8033 16.6284 19 16.1333 19H5.86667C5.3716 19 4.8968 18.8033 4.54673 18.4533C4.19667 18.1032 4 17.6284 4 17.1333V6.86667C4 6.3716 4.19667 5.8968 4.54673 5.54673C4.8968 5.19667 5.3716 5 5.86667 5H11.4667"
+                                stroke="#B4B4B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+                            <!-- bout de la flèche -->
+                            <path class="arrow-tip" d="M14 3H20V9" stroke="#B4B4B4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+
+                            <!-- bâton de la flèche -->
+                            <path class="arrow-stick" d="M10 13L20 3" stroke="#B4B4B4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/gaspar_dtch/" class="link" target="blank">
+                        Instagram
+                        <!-- Icon SVG -->
+                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+
+                            <!-- boîte -->
+                            <path
+                                d="M18 11.5333V17.1333C18 17.6284 17.8033 18.1032 17.4533 18.4533C17.1032 18.8033 16.6284 19 16.1333 19H5.86667C5.3716 19 4.8968 18.8033 4.54673 18.4533C4.19667 18.1032 4 17.6284 4 17.1333V6.86667C4 6.3716 4.19667 5.8968 4.54673 5.54673C4.8968 5.19667 5.3716 5 5.86667 5H11.4667"
+                                stroke="#B4B4B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+                            <!-- bout de la flèche -->
+                            <path class="arrow-tip" d="M14 3H20V9" stroke="#B4B4B4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+
+                            <!-- bâton de la flèche -->
+                            <path class="arrow-stick" d="M10 13L20 3" stroke="#B4B4B4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Gaspar-dtch" class="link" target="blank">
+                        Github
+                        <!-- Icon SVG -->
+                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+
+                            <!-- boîte -->
+                            <path
+                                d="M18 11.5333V17.1333C18 17.6284 17.8033 18.1032 17.4533 18.4533C17.1032 18.8033 16.6284 19 16.1333 19H5.86667C5.3716 19 4.8968 18.8033 4.54673 18.4533C4.19667 18.1032 4 17.6284 4 17.1333V6.86667C4 6.3716 4.19667 5.8968 4.54673 5.54673C4.8968 5.19667 5.3716 5 5.86667 5H11.4667"
+                                stroke="#B4B4B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+                            <!-- bout de la flèche -->
+                            <path class="arrow-tip" d="M14 3H20V9" stroke="#B4B4B4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+
+                            <!-- bâton de la flèche -->
+                            <path class="arrow-stick" d="M10 13L20 3" stroke="#B4B4B4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

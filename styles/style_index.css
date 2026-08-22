@@ -446,6 +446,7 @@ textarea {
     transform: translateX(2px);
 }
 
+
 @media (max-width: 1024px) {
     .hero-layout {
         flex-direction: column;
@@ -513,7 +514,7 @@ textarea {
 }
 
 @media (max-width: 900px) {
-    #nav {
+    /* #nav {
         justify-content: space-between;
         padding: 0 6vw;
     }
@@ -554,5 +555,5 @@ textarea {
         width: 24px;
         height: 2px;
         background: #000;
-    }
+    } */
 }

@@ -88,18 +88,44 @@ footer {
     font-family: "Inter", sans-serif;
 }
 
+/* Footer left */
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFF;
+}
+
+#coordonnees{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.25rem;
+    font-weight: 600;
+    gap: .25rem;
+}
+
 .footer-email {
     /* margin: 0.25rem 0; */
     font-size: 1.8rem;
     font-weight: 700;
+    color: #CCCCCC;
 }
 
 .footer-number {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
     font-size: 1.8rem;
 }
 
+/* Footer right */
 .footer-right {
     text-align: right;
 }

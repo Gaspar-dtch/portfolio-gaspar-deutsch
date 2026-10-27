@@ -25,7 +25,7 @@ requestAnimationFrame(raf);
 // Scroll header
 let dernierScroll = 0
 let dernierTemps = Date.now()
-const vitesseCap = 0.3
+const vitesseCap = 0.2
 const header = document.getElementById("nav")
 
 if (window.innerWidth > 900) {
